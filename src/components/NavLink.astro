@@ -1,0 +1,9 @@
+---
+const { value } = Astro.props
+---
+
+<li
+	class="p-2 text-[#4a4a4a] hover:text-green transition transition-ease duration-300 font-medium"
+>
+	<a href={`#${value}`}>{value}</a>
+</li>

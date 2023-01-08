@@ -2,7 +2,13 @@
 module.exports = {
 	content: ['./src/**/*.{astro,js}'],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				green: '#39b98d',
+				gray: '#333333',
+				white: '#fcfcfc',
+			},
+		},
 	},
 	plugins: [],
 }

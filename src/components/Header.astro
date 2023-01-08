@@ -1,40 +1,20 @@
-<header class="fixed top-0 left-0 right-0 z-20 uppercase shadow-md">
-	<nav class="max-w-screen-lg mx-auto p-2 flex justify-between items-center">
+---
+import NavLink from './NavLink.astro'
+---
+
+<header class="absolute top-0 left-0 w-full uppercase">
+	<nav
+		class="max-w-screen-lg mx-auto flex justify-between items-center border-green border-b p-4"
+	>
 		<a href="/" class="font-semibold text-3xl">
 			<img src="logo.png" alt="logo" width="75px" height="75px" />
 		</a>
 
-		<ul class="flex gap-12 font-medium font-[montserrat]">
-			<li
-				class="hover:text-[#39b98d] active:text-[#7957d5] transition transition-ease duratoin-500"
-			>
-				<a href="#home">home</a>
-			</li>
-			<li
-				class="hover:text-[#39b98d] active:text-[#7957d5] transition transition-ease duratoin-500"
-			>
-				<a href="#services">services</a>
-			</li>
-			<li
-				class="hover:text-[#39b98d] active:text-[#7957d5] transition transition-ease duratoin-500"
-			>
-				<a href="#projects">projects</a>
-			</li>
-			<li
-				class="hover:text-[#39b98d] active:text-[#7957d5] transition transition-ease duratoin-500"
-			>
-				<a href="#works">works</a>
-			</li>
-			<li
-				class="hover:text-[#39b98d] active:text-[#7957d5] transition transition-ease duratoin-500"
-			>
-				<a href="#timeline">timeline</a>
-			</li>
-			<li
-				class="hover:text-[#39b98d] active:text-[#7957d5] transition transition-ease duratoin-500"
-			>
-				<a href="#contact">contact</a>
-			</li>
+		<ul class="flex gap-8 font-mediumtext-[15px]">
+			<NavLink value="services" />
+			<NavLink value="projects" />
+			<NavLink value="works" />
+			<NavLink value="contact" />
 		</ul>
 	</nav>
 </header>
